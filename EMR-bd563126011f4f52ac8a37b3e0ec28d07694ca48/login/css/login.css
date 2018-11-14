@@ -1,0 +1,43 @@
+div.div1{	
+	padding-top:10%;	
+}
+
+div.div2{
+	padding-top:0.5%; 
+	
+}
+
+div.div3{
+	padding-top: 0.2%;
+	
+}
+
+input.in1{
+	padding:0.8em;
+	width: 20em;
+	border-style: solid;
+	border-color: #EBECEC;
+	border-radius: 0.5em;
+}	
+
+button.bt1{
+	padding:0.8em;
+	width: 18em;
+	color: #ffffff;
+	font-size: 1em;
+	background-color: #40D0EC;
+	border-style:solid;
+	border-color: #40D0EC;
+	border-radius: 0.5em;
+	font-family: sans-serif;
+}
+
+p.p1{
+	font-family: sans-serif;
+	color:#40D0EC;
+}
+
+h2.h2-1{
+	font-family: sans-serif;
+	font-size: 2em;
+}

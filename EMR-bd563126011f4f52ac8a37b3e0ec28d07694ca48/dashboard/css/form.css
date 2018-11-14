@@ -1,0 +1,100 @@
+/*fixing container*/
+.window_container{	
+	width : auto;
+	height: 620px;
+	background-color:#F6F8F8;
+	margin-top:0px;
+	border-top:0px;
+	padding-top: 0px;
+}
+
+.topic{
+	margin-left: 50px;
+	padding-top: 15px;
+	font-size: 25px;
+	color: #0EB3B3;
+}
+
+.form_table{
+	margin: 0px;
+	margin-top: 20px;
+	margin-left: 40px;		
+	border:0px solid #F6F8F8; 
+	border-collapse:collapse;
+	background-color:;	
+	display: inline-block;
+}
+
+tr.form_table_row{
+	border-bottom: 6px solid #F6F8F8;	
+	height: 40px;
+}
+
+td.form_table_row_description{
+	border-left: 0px solid #0EB3B3;
+	padding-left: 10px;
+}
+
+input.form_table_row_input{
+	margin-left: 10px;
+	border:1px solid #CDCDCD;
+	border-collapse: collapse;
+	border-radius: 8px;
+	padding: 3px 10px;	
+}
+
+input.form_table_row_input_radio{
+	margin-left: 10px;	
+}
+
+.form_table_row_textarea{
+	margin-left: 10px;
+	border-radius: 8px;
+	padding: 3px 5px;
+	border-color:#CDCDCD;
+	color:;	
+}
+
+.form_table_row_select{
+	margin-left: 10px;
+	border:1px solid #CDCDCD;
+	border-collapse: collapse;
+	border-radius: 8px;
+	padding: 3px 10px;	
+	width:110px;
+}
+
+.button{
+	background-color: #0EB3B3;/*blue*/
+	color:white;
+	border:none;
+	border-radius: 8px;
+
+	padding:8px 16px;
+	font-size: 16px;
+	margin:;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+
+	transition-duration: 0.4s;
+	cursor: pointer;
+}
+
+.button1{
+    background-color: white; 
+    color: #0EB3B3; 
+    border: 2px solid #0EB3B3;
+}
+
+.button1:hover{
+    background-color: #0EB3B3; 
+    color: white;   
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    /*outline: none;    */
+}

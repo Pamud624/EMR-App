@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>New reader</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">	
+	<link rel="stylesheet" type="text/css" href="css/frame.css">
+	<link rel="stylesheet" type="text/css" href="css/form.css">
+	<link rel="stylesheet" type="text/css" href="css/leftnav.css">
+	<link rel="stylesheet" type="text/css" href="css/topnav.css">
+</head>
+
+<body style="margin: 0px;">
+
+<div class="container">	
+	<!-- topnav -->
+	<div class="header" >
+		<span class="navleft">
+			<!-- top right -->
+			<img src="icon/emr.png" class="tl_image">
+			<span class="tl_text">EMR</span>
+		</span>
+
+		<span class="navcenter">
+			<!-- top right -->
+		</span> 
+
+		<span class="navright">
+			<!-- top right -->			
+			<img src="icon/myaccount.png" style="width: 30px;height: 30px;margin-top:10px;" class="tl_image">
+			<span style="font-size: 15px;margin-top:8px;" class="tl_text">Harin Samaranayake</span>				
+		</span> 
+
+		<span class="logout">				
+			<!-- logout-->						
+			<img src="icon/power.png" style="width: 20px;height: 20px;margin-left: 15px;margin-top: 15px;" class="tl_image">
+			<span style="font-size: 15px;margin-top:10px;" class="tl_text" >Logout</span>				
+		</span> 
+	</div>
+
+	<div class="body" style="display: block;">
+
+		<span class="left">
+			<!-- leftnav -->
+			<div class="navlist">
+				<ul class="nav">
+					<a href="d_customer.html" target="_self" style="text-decoration: none;"> <li class="nav"><img src="icon/myaccount.png" class="image">Home</li></a>
+					<a href="d_customer.html" target="_self" style="text-decoration: none;"> <li class="nav"><img src="icon/myaccount.png" class="image">My Account</li></a>
+					<a href="d_customer.html" target="_self" style="text-decoration: none;"> <li class="nav"><img src="icon/customer.png" class="image">Customer</li></a>
+					<a href="d_customer.html" target="_self" style="text-decoration: none;"> <li class="nav"><img src="icon/reader.png" class="image">Reader</li></a>
+					<a href="d_customer.html" target="_self" style="text-decoration: none;"> <li class="nav"><img src="icon/readings.png" class="image">Readings</li></a>
+					<a href="d_customer.html" target="_self" style="text-decoration: none;"> <li class="nav"><img src="icon/map.png" class="image">Maps</li></a>
+					<a href="d_customer.html" target="_self" style="text-decoration: none;"> <li class="nav"><img src="icon/analytics.png" class="image">Analytics</li></a>
+					<a href="d_customer.html" target="_self" style="text-decoration: none;"> <li class="nav"><img src="icon/notifications.png" class="image">Notifications</li></a>
+					<a href="d_customer.html" target="_self" style="text-decoration: none;"> <li class="nav"><img src="icon/settings.png" class="image">Settings</li></a>		
+				</ul>
+			</div>
+		</span>
+			
+		<span class="right">
+			<!-- main content -->
+			<div class="window_container">
+				<div class="header" style="padding: 20px 50px;">
+					<span><u>Reader</u></span>						
+				</div>
+
+				<form method="post" action="customer.php">
+					<table  class="form_table ">
+						<tr class="form_table_row">
+							<td class="form_table_row_description">National Identity Card Number</td>
+							<td><input type="text" name="nic" placeholder="nic" size="40" class="form_table_row_input"></td>
+						</tr>
+
+						<tr class="form_table_row">
+							<td class="form_table_row_description">EPF Number</td>
+							<td><input type="text" name="epf" placeholder="epf" size="40" class="form_table_row_input"></td>
+						</tr>
+
+						<tr class="form_table_row">
+							<td class="form_table_row_description">First Name</td>
+							<td><input type="text" name="fname" placeholder="first name" size="40" class="form_table_row_input"></td>
+						</tr>
+
+						<tr class="form_table_row">
+							<td class="form_table_row_description">Middle Name</td>
+							<td><input type="text" name="mname" placeholder="middle name"  size="40" class="form_table_row_input"></td>
+						</tr>
+
+						<tr class="form_table_row">
+							<td class="form_table_row_description">Last Name</td>
+							<td><input type="text" name="lname" placeholder="last name"  size="40"class="form_table_row_input"></td>
+						</tr>
+
+						<tr class="form_table_row">
+							<td class="form_table_row_description">Gender</td>
+							<td>
+								<input type="radio" name="gender" class="form_table_row_input_radio">Male
+							    <input type="radio" name="gender" class="form_table_row_input_radio">Female
+							</td>
+						</tr>
+
+						<tr class="form_table_row">
+							<td class="form_table_row_description">Telephone</td>
+							<td><input type="text" name="tp" placeholder="telephone" size="40" class="form_table_row_input"></td>
+						</tr>
+
+						<tr class="form_table_row">
+							<td class="form_table_row_description">Mobile</td>
+							<td><input type="text" name="mobile" placeholder="mobile" size="40" class="form_table_row_input"></td>
+						</tr>
+
+						<tr class="form_table_row">
+							<td class="form_table_row_description">Email</td>
+							<td><input type="text" name="email" placeholder="email" size="40" class="form_table_row_input"></td>
+						</tr>
+
+						<tr class="form_table_row">
+							<td class="form_table_row_description">Username</td>
+							<td><input type="text" name="username" placeholder="username"  size="40"class="form_table_row_input"></td>
+						</tr>
+
+						<tr class="form_table_row">
+							<td class="form_table_row_description">Password</td>
+							<td><input type="password" name="password" placeholder="password"  size="40"class="form_table_row_input"></td>
+						</tr>
+
+						<tr class="form_table_row">
+							<td class="form_table_row_description">Confirm Password</td>
+							<td><input type="password" name="cpassword" placeholder="confirm password"  size="40"class="form_table_row_input"></td>
+						</tr>				
+
+						<tr class="form_table_row">
+							<td class="form_table_row_description"></td>
+							<td>
+								<button type="submit" name="register" class="button button1" style="margin-left: 10px;">Register</button>						
+							</td>
+						</tr>							
+					</table>
+				</form>
+			</div>
+		</span>	
+
+	</div>
+
+	<div class="ft">
+		<!-- footer -->
+		Copyrights &copy; 2017 EMR
+	</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+.imghome{
+	width: 150px;
+	height: 150px;
+	margin: 5px 0px 5px 5px;
+	padding:20px;
+	background-color: #00284d;
+	border-radius: 8px;
+}
+
+.imghome:hover{
+	padding:15px;
+	background-color: #00cccc;
+	transition: 0.2s;
+}

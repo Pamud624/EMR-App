@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Area Administrator</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="form.css">
+</head>
+<body>
+	<!-- from here -->
+	<div class="window_container">
+		<div class="header">
+			<span><u>New Area Administrator</u></span>						
+		</div>
+
+		<form method="post" action="customer.php">
+			<table  class="form_table ">
+				<tr class="form_table_row">
+					<td class="form_table_row_description">Admin ID</td>
+					<td><input type="text" name="nic" placeholder="id" size="40" class="form_table_row_input" disabled></td>
+				</tr>
+
+				<tr class="form_table_row">
+					<td class="form_table_row_description">National Identity Card Number</td>
+					<td><input type="text" name="nic" placeholder="nic" size="40" class="form_table_row_input"></td>
+				</tr>
+
+				<tr class="form_table_row">
+					<td class="form_table_row_description">First Name</td>
+					<td><input type="text" name="fname" placeholder="first name" size="40" class="form_table_row_input"></td>
+				</tr>
+
+				<tr class="form_table_row">
+					<td class="form_table_row_description">Middle Name</td>
+					<td><input type="text" name="mname" placeholder="middle name"  size="40" class="form_table_row_input"></td>
+				</tr>
+
+				<tr class="form_table_row">
+					<td class="form_table_row_description">Last Name</td>
+					<td><input type="text" name="lname" placeholder="last name"  size="40"class="form_table_row_input"></td>
+				</tr>
+
+				<tr class="form_table_row">
+					<td class="form_table_row_description">Contact No.</td>
+					<td>
+						<input type="text" name="tp" placeholder="telephone" size="15" class="form_table_row_input">
+						<input type="text" name="tp" placeholder="mobile" size="15" class="form_table_row_input">
+					</td>
+				</tr>
+
+				<tr class="form_table_row">
+					<td class="form_table_row_description">Email</td>
+					<td><input type="text" name="email" placeholder="email" size="40" class="form_table_row_input"></td>
+				</tr>
+
+				<tr class="form_table_row">
+					<td class="form_table_row_description">Username</td>
+					<td><input type="text" name="username" placeholder="username" size="40" class="form_table_row_input"></td>
+				</tr>
+
+				<tr class="form_table_row">
+					<td class="form_table_row_description">Password</td>
+					<td><input type="password" name="password" placeholder="password" size="40" class="form_table_row_input"></td>
+				</tr>
+
+				<tr class="form_table_row">
+					<td class="form_table_row_description">Confirm Password</td>
+					<td><input type="password" name="cpassword" placeholder="confirm password" size="40" class="form_table_row_input"></td>
+				</tr>
+
+				<tr class="form_table_row">
+					<td class="form_table_row_description">Security Code</td>
+					<td><input type="text" name="username" placeholder="security code" size="40" class="form_table_row_input"></td>
+				</tr>
+
+				<tr class="form_table_row">
+					<td class="form_table_row_description">Reset Code</td>
+					<td><input type="text" name="username" placeholder="" size="40" class="form_table_row_input" disabled></td>
+				</tr>
+
+				<tr class="form_table_row">
+					<td class="form_table_row_description"></td>
+					<td>
+						<button type="submit" name="register" class="button button1" style="margin-left: 10px;">Register</button>						
+					</td>
+				</tr>							
+			</table>
+		</form>
+	</div>
+</body>
+</html>

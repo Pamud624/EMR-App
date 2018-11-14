@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>frame</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">	
+	<link rel="stylesheet" type="text/css" href="css/frame.css">
+	<link rel="stylesheet" type="text/css" href="css/form.css">
+	<link rel="stylesheet" type="text/css" href="css/leftnav.css">
+	<link rel="stylesheet" type="text/css" href="css/topnav.css">
+</head>
+
+<body style="margin: 0px;">
+
+<div class="container">		
+	<div class="header" >
+		<!-- topnav -->
+		<!-- ................................................................................................................................................................... -->
+		<span class="navleft">
+			<!-- top right -->
+			<img src="icon/emr.png" class="tl_image">
+			<span class="tl_text">EMR</span>
+		</span>
+
+		<span class="navcenter">
+			<!-- top right -->
+		</span> 
+
+		<span class="navright">
+			<!-- top right -->			
+			<img src="icon/myaccount.png" style="width: 30px;height: 30px;margin-top:10px;" class="tl_image">
+			<span style="font-size: 15px;margin-top:8px;" class="tl_text">Harin Samaranayake</span>				
+		</span> 
+
+		<span class="logout">				
+			<!-- logout-->						
+			<img src="icon/power.png" style="width: 20px;height: 20px;margin-left: 15px;margin-top: 15px;" class="tl_image">
+			<span style="font-size: 15px;margin-top:10px;" class="tl_text" >Logout</span>				
+		</span>
+		<!-- ................................................................................................................................................................... --> 
+	</div>
+
+	<div class="body" style="display: block;">
+
+		<span class="left">
+			<!-- leftnav -->
+			<!-- ................................................................................................................................................................... -->
+			<div class="navlist">
+				<ul class="nav">
+					<li class="nav"><img src="icon/myaccount.png" class="image">My Account</li>
+					<li class="nav" style="font-size: 20px;"><img src="icon/customer.png" class="image"><b>Customer</b></li>
+					<li class="nav"><img src="icon/reader.png" class="image">Reader</li>
+					<li class="nav"><img src="icon/readings.png" class="image">Readings</li>
+					<li class="nav"><img src="icon/map.png" class="image">Maps</li>
+					<li class="nav"><img src="icon/analytics.png" class="image">Analytics</li>
+					<li class="nav"><img src="icon/notifications.png" class="image">Notifications</li>
+					<li class="nav"><img src="icon/settings.png" class="image">Settings</li>		
+				</ul>
+			</div>
+			<!-- ................................................................................................................................................................... -->
+		</span>
+			
+		<span class="right">
+			<!-- main content -->
+			<!-- ................................................................................................................................................................... -->
+			<div class="window_container">
+				<div class="topic">
+					<span><u>New Customer</u></span>						
+				</div>		
+
+				<form method="post" action="controller/p_customer.php">
+					<table  class="form_table ">
+						<tr class="form_table_row">
+							<td class="form_table_row_description">National Identity Card Number</td>
+							<td><input type="text" name="nic" placeholder="nic" size="40" class="form_table_row_input"></td>
+						</tr>
+
+						<tr class="form_table_row">
+							<td class="form_table_row_description">First Name</td>
+							<td><input type="text" name="fname" placeholder="first name" size="40" class="form_table_row_input"></td>
+						</tr>
+
+						<tr class="form_table_row">
+							<td class="form_table_row_description">Middle Name</td>
+							<td><input type="text" name="mname" placeholder="middle name"  size="40" class="form_table_row_input"></td>
+						</tr>
+
+						<tr class="form_table_row">
+							<td class="form_table_row_description">Last Name</td>
+							<td><input type="text" name="lname" placeholder="last name"  size="40"class="form_table_row_input"></td>
+						</tr>
+
+						<tr class="form_table_row">
+							<td class="form_table_row_description">Gender</td>
+							<td>
+								<input type="radio" name="gender" class="form_table_row_input_radio" value="1" checked="checked">Male
+							    <input type="radio" name="gender" class="form_table_row_input_radio" value="0">Female
+							</td>
+						</tr>
+
+						<tr class="form_table_row">
+							<td class="form_table_row_description">Contact Address</td>
+							<td><input type="text" name="address_one" placeholder="address line one" size="40" class="form_table_row_input"></td>
+						</tr>
+
+						<tr class="form_table_row">
+							<td class="form_table_row_description"></td>
+							<td><input type="text" name="address_two" placeholder="address line two" size="40" class="form_table_row_input"></td>
+						</tr>
+
+						<tr class="form_table_row">
+							<td class="form_table_row_description"></td>
+							<td><input type="text" name="address_three" placeholder="address line three" size="40" class="form_table_row_input"></td>
+						</tr>
+
+						<tr class="form_table_row">
+							<td class="form_table_row_description">Contact no.</td>
+							<td>
+								<input type="text" name="telephone" placeholder="telephone" size="15" class="form_table_row_input">
+								<input type="text" name="mobile" placeholder="mobile" size="15" class="form_table_row_input">
+							</td>
+						</tr>
+
+						<tr class="form_table_row">
+							<td class="form_table_row_description">Email</td>
+							<td><input type="text" name="email" placeholder="email" size="40" class="form_table_row_input"></td>
+						</tr>
+
+						<tr class="form_table_row">
+							<td class="form_table_row_description">Usename</td>
+							<td><input type="text" name="username" placeholder="username" size="40" class="form_table_row_input"></td>
+						</tr>
+
+						<tr class="form_table_row">
+							<td class="form_table_row_description">Password</td>
+							<td>
+								<input type="password" name="password" placeholder="password" size="15" class="form_table_row_input">
+								<input type="password" name="cpassword" placeholder="confirm" size="15" class="form_table_row_input">
+							</td>
+						</tr>
+
+						<tr class="form_table_row">
+							<td class="form_table_row_description"></td>
+							<td>
+								<button type="submit" name="register" class="button button1" style="margin-left: 10px;">Register</button>						
+							</td>
+						</tr>							
+					</table>
+				</form>		
+			</div>
+			<!-- ................................................................................................................................................................... -->
+		</span>	
+	</div>
+
+	<div class="ft">
+		<!-- footer -->
+		Copyrights &copy; 2017 EMR
+	</div>
+
+</div>
+
+</body>
+</html>
